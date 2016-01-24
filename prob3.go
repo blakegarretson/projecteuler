@@ -21,7 +21,7 @@ func main() {
 		}
 		x += 1
 	}
-    
+
 	var prime bool
 	primefactors := make([]int64, 0)
 	for _, x := range factors {
