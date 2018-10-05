@@ -1,3 +1,6 @@
+"""This is a library for functions that may be
+commonly needed for these solutions.
+"""
 import math 
 
 def isPrime(n):
