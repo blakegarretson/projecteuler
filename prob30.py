@@ -14,8 +14,8 @@
 
 combos = []
 numdigits = 5
-maxnum = int("9"*numdigits)
-minnum = int("1"+"0"*(numdigits-1))
+maxnum = int("9"*(numdigits+1))
+minnum = 2
 num = minnum
 
 while num <= maxnum:
