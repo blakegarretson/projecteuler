@@ -1,10 +1,23 @@
-// Still under development
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("Test")
+	n := 1
+	for {
+		success := true
+		for i := 1; i < 21; i++ {
+			if n%i == 0 {
+				continue
+			} else {
+				success = false
+				break
+			}
+		}
+		if success == true {
+			break
+		}
+		n++
+	}
+	fmt.Println(n)
 }
