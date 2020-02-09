@@ -8,6 +8,6 @@ while True:
             passed = False
             break
     if passed:
-        print n
+        print(n)
         break
     n += 1

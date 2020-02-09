@@ -1,13 +1,23 @@
-// Still under development
 package main
 
-import (
-	"fmt"
-)
-
-var []int{1 2 3 4 5 6 7 8 9 10}
+import "fmt"
 
 func main() {
-    for 
-	fmt.Println("Test")
+	n := 1
+	for {
+		success := true
+		for i := 1; i < 21; i++ {
+			if n%i == 0 {
+				continue
+			} else {
+				success = false
+				break
+			}
+		}
+		if success == true {
+			break
+		}
+		n++
+	}
+	fmt.Println(n)
 }
