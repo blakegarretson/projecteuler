@@ -9,8 +9,8 @@ for x in nums:
                 l.sort()
                 a,b,c = l
                 if a**2 + b**2 == c**2:
-                    print a,b,c
-                    print a*b*c
+                    print(a,b,c)
+                    print(a*b*c)
                     sys.exit()
                     
                     

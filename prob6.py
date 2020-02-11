@@ -9,4 +9,4 @@ for x in nums:
 
 square_of_sums = sum(nums)**2
 
-print square_of_sums - sum_of_squares
+print(square_of_sums - sum_of_squares)
