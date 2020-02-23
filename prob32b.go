@@ -11,8 +11,8 @@ func main() {
 	for _, limits := range [][]int{{12, 98, 123, 987}, {1, 9, 1234, 9876}} {
 		l1l, l1u := limits[0], limits[1]
 		l2l, l2u := limits[2], limits[3]
-		for a := l1l; a <= l1u; a++ { //two digit
-			for b := l2l; b <= l2u; b++ { //three digit
+		for a := l1l; a <= l1u; a++ {
+			for b := l2l; b <= l2u; b++ {
 				c := a * b
 				s := fmt.Sprintf("%d%d%d", a, b, c)
 				if len(s) == 9 && strings.Count(s, "1") == 1 &&
@@ -27,12 +27,10 @@ func main() {
 					if !products[c] {
 						products[c] = true
 						sum += c
-						//fmt.Println("Adding", a, b, c)
 					}
 				}
 			}
 		}
 	}
-	//fmt.Println(products)
 	fmt.Println(sum)
 }

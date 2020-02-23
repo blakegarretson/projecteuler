@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	a := 0
@@ -11,3 +13,4 @@ func main() {
 	}
 	fmt.Printf("%v\n", a)
 }
+
